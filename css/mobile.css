@@ -1,0 +1,14 @@
+#navbar{
+    flex-direction: column;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    overflow: hidden;
+    height:  80px;
+}
+#trainig .items{
+    flex-direction: column;
+    width: 100%;
+}
+.courses .corse{
+    flex-direction: column;
+}

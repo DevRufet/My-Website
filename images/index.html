@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rufet Nesibov|Developer</title>
+    <meta name="keywords" content="Python,HTML,CSS,JavaScript">
+    <meta name="description" content="Rufet Nesibov|Developer">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="main.css">
+    <!--Tablet-->
+    <link rel="stylesheet" media="(max-width:500px)"   href="mobile.css">
+    <link rel="stylesheet" media="(max-width:768px)" href="tablet.css">
+    <!--Fonts Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Text*/
+.text-center{
+    text-align: center;
+}
+.heading-small{
+    font-size: 1.25rem;
+}
+.heading-medium{
+    font-size: 1.5rem;
+}
+.heading-big{
+    font-size: 1.75rem;
+}
+/*Colors*/
+.bg-dark-blue{
+    background: #062e51;
+}
+.bg-light-blue{
+    background: #336ea2;
+}
+/*Buttons*/
+.btn{
+    border-radius: 7px;
+    margin-top: 1.25rem;
+    padding: 0.8rem 3rem;
+    letter-spacing: 0.5px;
+}
+.btn-primary{
+    background: #336ea2;
+}
+.btn-primary:hover{
+    color: #336ea2;
+    background: #fff;
+    border: 0.5px solid #336ea2;
+}
+.btn-dark{
+    background: #333;
+}
+.btn-dark:hover{
+    color: #333;
+    background: #fff;
+    border: 0.5px solid #333;
+}
+.btn-block{
+    text-align: center;
+    width: 100%;
+}
+/*Container*/
+.container{
+    padding: 0 auto;
+    max-width: 1100px;
+}
+/*Forms*/
+.forms-group{
+    padding: 0.25rem 0;
+}
+.form-group label{
+    display: block;
+}
+.form-control{
+    width: 100%;
+    padding: 0.4rem;
+    font-size: 1rem;
+    resize: none;
+    border-radius: 5px;
+}
+</style>
+<style>
+*{
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+html{
+    font-family: "Open Sans",sans-serif;
+}
+/*Navbar Section*/
+#navbar{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.75rem;
+    height: 70px;
+}
+#navbar ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+#navbar ul li a{
+    padding: 0.5rem;
+}
+#navbar ul li a:hover{
+    background: #336ea2;
+    border-radius: 4px;
+}
+/*Home Section*/
+#home{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border-bottom: 1px solid grey;
+}
+#home img{
+    max-width: 20%;
+    height: auto;
+    border-radius: 100%;
+}
+#home .name h2{
+    margin-bottom: 0.75rem;
+}
+#home .name p{
+    opacity: 0.6;
+    font-style: italic;
+}
+#training{
+    color: #fff;
+    padding: 1rem;
+}
+.items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.items .item{
+    width: 33%;
+    text-align: center;
+    padding: 0.5rem;
+    
+}
+.items .item:hover{
+    opacity: 0.6;
+    color: green;
+}
+/*Courses*/
+#courses{
+    color: #333;
+    padding: 1rem;
+    
+}
+.courses{
+    display: flex;
+    
+    padding: 1rem;
+}
+.courses .course{
+    display: flex;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+}
+.course-image{
+    margin-right: 0.5rem;
+    position: relative;
+}
+.course-image img{
+    border-radius: 5px;
+}
+.course-image span{
+    background: green;
+    position: absolute;
+    color: #fff;
+    border-radius: 4px;
+    top: 15px;
+    left: 0;
+    padding: 0.25rem;
+}
+.course-info .title{
+    letter-spacing: 1.2px;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+.description{
+    opacity: 0.6;
+    letter-spacing: 1.2px;
+    margin-bottom: 0.25rem;
+}
+.instructor{
+    opacity: 0.6;
+    font-size: 0.8rem;
+    margin-bottom: 0.25rem;
+}
+.rating{
+    opacity: 0.6;
+    font-size: 0.8rem;
+    margin-bottom: 0.25rem;
+}
+.course-image img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 100%;
+}
+#contact{
+    color: #fff;
+    padding: 1rem;
+}
+#contact .contact-form{
+    max-width: 700px;
+    margin-left: auto;
+    margin-right:auto;
+    display: flex;
+    flex-direction: column;
+}
+.contact-form ul{
+    list-style-type: none;
+    display: flex;
+    margin-top: 1rem;
+    align-self: center;
+}
+.contact-form ul li a{
+    padding: 1rem;
+    font-size: 2rem;
+}
+ p{
+    
+    display: flex;
+}
+
+    </style>
+</head>
+<body>
+    <header class="bg-dark-blue">
+        <div class="container">
+        <nav id="navbar">
+            <h1 class="heading-small">Rufet Nesibov</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#training">Training</a></li>
+                <li ><a href="#courses">Courses</a></li>
+                <li ><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <section id="home">
+        <img src="sekil.png.jpg" alt="Rufet Nesibov">
+        <div class="name text-center">
+        <h2 class="heading-big">Rufet Nesibov</h2>
+        <p>Computer Science|Founder of WinEner</p>
+        </div>
+        <a href="#training" class="btn btn-primary">Go to Training</a>
+        <a href="#courses" class="btn btn-primary">Go to Courses</a>
+        <a href="#contact" class="btn btn-primary">Go to Contact</a>
+    </section>
+    <section id="training" class="bg-dark-blue">
+        <h3 class="text-center heading-medium">Training</h3>
+        <div class="items">
+            <article class="item">
+                <i class="fa fa-pencil-alt"></i>
+                <h3>School elementary</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, est!</p>
+            </article>
+            <article class="item">
+                <i class="fa fa-pencil-alt"></i>
+                <h3>Online elementary</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, est!</p>
+            </article>
+            <article class="item">
+                <i class="fa fa-pencil-alt"></i>
+                <h3>Conferance elementary</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, est!</p>
+            </article>
+        </div>
+    </section>
+    <section id="courses">
+        <h3 class="text-center heading-medium">Courses</h3>
+        <div class="container">
+            <!--Course 1-->
+            <div class="courses">
+                <div class="course">
+                    <div class="course-image">
+                    <img src="frontend.png"  alt="frontend">
+                    <span>Finish</span>
+                    <div class="course-info">
+                        <div class="title">HTML,CSS,JavaScript</div>
+                    </div>
+                    <div class="description">Completed,Finish to Frontend</div>
+                    <div class="instructor">Rufet Nesibov</div>
+                    <div class="rating">10</div>
+                    </div>
+                </div>
+                <!--Course 2-->
+                <div class="course">
+                    <div class="course-image">
+                    <img src="backend.png"  alt="backend">
+                    <span>Finish</span>
+                    <div class="course-info">
+                        <div class="title">Python,Django,Java</div>
+                    </div>
+                    <div class="description">Completed,Finish to Backend</div>
+                    <div class="instructor">Rufet Nesibov</div>
+                    <div class="rating">10</div>
+                    </div>
+                </div>
+                <!--Course 3-->
+                <div class="course">
+                    <div class="course-image">
+                    <img src="full-stack-devlopment-min.png" class="image" alt="full stack developer">
+                    <span>Finish</span>
+                    <div class="course-info">
+                        <div class="title">HTML,CSS,JavaScript,Python,Django,Sqlite</div>
+                    </div>
+                    <div class="description">Completed,Finish to Full stack Programming</div>
+                    <div class="instructor">Rufet Nesibov</div>
+                    <div class="rating">10</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="contact" class="bg-dark-blue">
+    <div class="contact-form">
+        <form>
+            <h4 class="text-center heading-medium">Contact:</h4>
+            <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" placeholder="Name" id="name" name="name" class="form-control">
+           </div>
+           <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="text" placeholder="email" id="email" name="email" class="form-control">
+           </div>
+           <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" rows="5" class="form-control" placeholder="message..."></textarea>
+           </div>
+           <button type="submit" class="btn btn-block">
+            Send
+           </button>
+        </form>
+        <ul>
+            <li><a href="https://az-az.facebook.com/people/Nesibov-Rufet/pfbid02yvYekr2pPCueukZX1chAg3tH27NhKkPqnUpdFRNQv2JuVvTopyXiDKFbHxVfc8ypl/"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/rufet__nesibov/?ysclid=lfvocdivdl497492916"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="" title="@nesibov_rufet"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" title="0507763976"><i class="fab fa-whatsapp"></i></a></li>
+            <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjo6_-Y14T-AhXmQ_EDHSo4DSMQFnoECAsQAQ&url=https%3A%2F%2Faz.linkedin.com%2Fin%2Frufet-nesibov-37541a249&usg=AOvVaw06FHLG1ykOGiO9cpEzLMgt"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+
+    </div>
+    <div class="develop">
+        <p>@Developed by Rufet Nesibov</p>
+    </div>
+    
+    </footer>
+
+</body>
+</html>
